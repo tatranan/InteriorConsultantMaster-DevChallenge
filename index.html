@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5"/>
-    <link rel="icon" href="devchallenges.png"/>
+    <link rel="icon" href="./asset/images/devchallenges.png"/>
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <title>Interior Consultant</title>
@@ -18,7 +19,8 @@
 
 </head>
 <body>
-<div class="container">
+
+<div class="container" id="container">
     <div class="header">
         <div class="logo">
             <a href="#">This interior</a>
@@ -28,6 +30,12 @@
             <div class="menu-item"><a class="menu-link" href="#collection">Collection</a></div>
             <div class="menu-item"><a class="menu-link" href="#about">About</a></div>
             <div class="menu-item"><a class="menu-link" href="#contact">Contact</a></div>
+        </div>
+        <div class="menu-mobile" id="button_toggle_menu">
+            <span class="material-icons">
+                menu
+            </span>
+
         </div>
     </div>
     <div class="content">
@@ -47,12 +55,12 @@
         </div>
         <div class="content__media">
             <div class="content__media-image">
-                <img src="./asset/image/photo1.png" alt="Modern Interior Image">
+                <img src="./asset/images/photo1.png" alt="Modern Interior Image">
             </div>
             <div class="content__media-card">
                 <div class="card__header">
                     <div class="card__header-logo">
-                        <img src="./asset/image/photo2.png" alt="Aliza Webber Logo">
+                        <img src="./asset/images/photo2.png" alt="Aliza Webber Logo">
                     </div>
                     <div class="card__header-info">
                         <div class="card__header-name">Aliza Webber</div>
@@ -69,6 +77,26 @@
     <div class="footer">
         Created by tatranan - devChallenges.io
     </div>
+
+
 </div>
+<div class="menu-mobile-overlay " id="overlayMenu">
+    <div class="menu-mobile-close" id="button-close-menu">
+        <button id="button-close">
+        <span class="material-icons">
+            close
+        </span>
+        </button>
+    </div>
+    <div class="menu-mobile-wrap">
+        <div class="menu-mobile-list">
+            <div class="menu-item"><a class="menu-link" href="#home">Home</a></div>
+            <div class="menu-item"><a class="menu-link" href="#collection">Collection</a></div>
+            <div class="menu-item"><a class="menu-link" href="#about">About</a></div>
+            <div class="menu-item"><a class="menu-link" href="#contact">Contact</a></div>
+        </div>
+    </div>
+</div>
+<script src="./asset/js/index.js"></script>
 </body>
 </html>

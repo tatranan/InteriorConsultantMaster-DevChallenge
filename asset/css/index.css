@@ -16,6 +16,7 @@ html {
     width: 1280px;
     margin: 0 auto;
     padding: 4rem;
+
 }
 
 .header {
@@ -40,12 +41,18 @@ html {
 
 .menu {
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 
-.menu-item {
-    padding: 1.5rem;
+.menu-mobile {
+    display: none;
 }
+.menu-mobile-overlay{
+    display: none;
+}
+/*.menu-item {*/
+/*    padding: 1.5rem;*/
+/*}*/
 
 .menu-link {
     padding-bottom: 0.4rem;
@@ -176,7 +183,7 @@ html {
 
 }
 
-.footer{
+.footer {
     margin-top: 15rem;
     display: flex;
     justify-content: center;
@@ -186,4 +193,157 @@ html {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #A9A9A9;
+}
+.hidden{
+    display: none;
+}
+@media only screen and (max-width: 420px) {
+    .container {
+        width: 420px;
+        /*display: none;*/
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-mobile span {
+        color: #F2F2F2;
+        font-size: 3.6rem;
+    }
+
+    .menu-mobile-overlay {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: #181719;
+        z-index: 10;
+
+    }
+
+    .menu-mobile-close {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-mobile-close button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        color:#F2F2F2;
+    }
+
+    .menu-mobile-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .menu-mobile-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        background-color: #181719;
+        width: 100%;
+
+    }
+    .menu-link{
+        font-size: 1.8rem;
+    }
+    .content {
+        margin-top: 5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5rem;
+    }
+
+    .content__desc {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .content__desc-title {
+        width: 100%;
+        font-size: 3.6rem;
+
+    }
+
+    .content__desc-body {
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
+
+    .content__desc-body p {
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6rem;
+        font-weight: 400;
+    }
+
+    .content__media {
+        max-width: 100%;
+    }
+
+    .content__media {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .content__media-card {
+        position: absolute;
+        top: 100%;
+        transform: translateY(-50%);
+        right: 3rem;
+        background-color: #181719;
+        width: 25rem;
+        padding: 1.8rem 2.4rem;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+
+    .card__header-logo {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .card__header-name {
+        font-size: 1.2rem;
+    }
+
+    .card__header-career {
+        font-size: 1rem;
+    }
+
+    .card-content {
+        width: 80%;
+        font-size: 1.8rem;
+    }
+
+    .footer {
+        margin-top: 15rem;
+        display: flex;
+        justify-content: center;
+
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 1.6;
+        color: #A9A9A9;
+    }
 }

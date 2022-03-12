@@ -52,10 +52,10 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Acknowledgements
 
-- [Toggle button by JS](https://www.w3schools.com/jsref/prop_style_display.asp)
+- [Style display Property](https://www.w3schools.com/jsref/prop_style_display.asp)
 - [How TO - Overlay](https://www.w3schools.com/howto/howto_css_overlay.asp)
 
 ## Contact
 
-- GitHub [@tatranan](https://github.com/tatranan})
-- Youtube [@Drio Anden](https://www.youtube.com/channel/UC7CJBfb1bAIg6kCGmXwcoUQ/videos})
+- GitHub [tatranan](https://github.com/tatranan)
+- Youtube [Drio Anden](https://www.youtube.com/channel/UC7CJBfb1bAIg6kCGmXwcoUQ/videos})
